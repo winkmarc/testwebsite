@@ -1,0 +1,224 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+/* Header & Navigation */
+header {
+  background: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #f0c040;
+}
+
+/* Hero Header (für Startseite) */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+.hero nav ul li a {
+  color: #fff;
+}
+.hero h1, .hero p {
+  color: #fff;
+}
+
+/* Page Header (für unsere-reisen und about) */
+.page-header {
+  background: #f8f8f8;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.page-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+}
+
+/* Post Header (für einzelne Beiträge) */
+.post-header {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+.post-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+}
+.post-header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 20px;
+}
+.post-header nav ul li {
+  margin: 0 15px;
+}
+.post-header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.post-header .post-title {
+  text-align: center;
+  color: #fff;
+  margin: auto;
+}
+.post-header .post-title h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+.post-header .post-title p {
+  font-size: 1.1rem;
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+main h1, main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Post Grid */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+.post-card {
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.post-card:hover {
+  transform: translateY(-5px);
+}
+.post-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.post-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.post-content {
+  padding: 20px;
+}
+.post-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.post-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Post Content (Einzelne Beiträge) */
+.post-content p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+a.button {
+  display: inline-block;
+  background: #f0c040;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background 0.3s;
+}
+a.button:hover {
+  background: #d8a32a;
+}
+.back-button {
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+/* About Content */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+.about-content blockquote {
+  font-style: italic;
+  color: #777;
+  border-left: 3px solid #f0c040;
+  padding-left: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+footer p {
+  margin: 0;
+}
+
